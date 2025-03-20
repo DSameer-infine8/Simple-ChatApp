@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-ChatApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <!-- Login Screen -->
+        <div class="login-screen" id="login-screen">
+            <h2>Chat App Login</h2>
+            <form class="login-form" id="login-form">
+                <input type="text" class="login-input" id="username-input" placeholder="Your username" required>
+                <button type="submit" class="login-button">Enter Chat</button>
+            </form>
+        </div>
+    
+        <!-- Chat App -->
+        <div class="container hidden" id="chat-app">
+            <header class="app-header">
+                <h1>Chat App</h1>
+                <div class="user-status">
+                    <div class="status-dot"></div>
+                    <span id="current-user">Anonymous</span>
+                </div>
+            </header>
+    
+            <div class="chat-container" id="chat-container">
+                <!-- Messages will be added here dynamically -->
+            </div>
+    
+            <form class="message-form" id="message-form">
+                <textarea 
+                    class="message-input" 
+                    id="message-input" 
+                    placeholder="Type a message..." 
+                    required
+                    rows="1"
+                ></textarea>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+
+    <script src="./index.js"></script> 
+</body>
+</html>
